@@ -1,0 +1,17 @@
+1 - edite o arquivo "resources.rc" e mude "python.ico" para o nome do icone que deseja
+
+2 - execute o recompile.bat (sem modo administrador) e insira o nome do arquivo 
+(não é necessario usar aspas em caso do nome do arquivo tiver espaço)
+
+3 - depois que o executavel foi gerado, clique com o botão direito sobre algum arquivo .py
+
+4 - escolha a opção "abrir como..." > "Escolha outro aplicativo"
+
+5 - ative a opção "sempre usar este aplicativo para abrir .py"
+
+6 - vá em "escolha outro aplicativo neste PC"
+
+7 - navegue até o executavel e clique em "Abrir..."
+
+8 - pronto, ao clicar duas vezes em um arquivo .py, sera executado normalmente.
+e ao dar erro irá pausar para poder visualizar.
