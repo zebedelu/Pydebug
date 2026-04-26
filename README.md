@@ -31,26 +31,29 @@ O Pydebug foi criado com o objetivo de resolver esse problema. Ao evitar o uso d
 
 ## Como usar
 Certifique-se de que o Python está instalado e configurado no PATH do sistema.
-Baixe ou clone o repositório do Pydebug.
 
 #### Passo 1
-Abra o CMD no modo ADMINISTRADOR e vá para a raiz do projeto
+Clone o projeto
+```bash
+git clone https://github.com/zebedelu/Pydebug.git
+```
 
 #### Passo 2
-Execute os seguintes comandos
-```bash
-assoc .py=Python.File
-ftype Python.File="" "%1" %*
-```
-Isso muda o executável que irá abrir por padrão arquivos .py para o executável do programa
+Abra o CMD no modo ADMINISTRADOR e vá para a raiz do projeto
 
 #### Passo 3
-Teste executando o arquivo error.py no projeto
+Execute os seguintes comandos para mudar o executavel do python para o **python compilator.exe**, e abrir o projeto no explorador de arquivos
 ```bash
-python error.py
+assoc .py=Python.File
+ftype Python.File="%cd%\python compilator.exe" "%1" %*
+start explorer.exe %cd%
+exit
 ```
 
 #### Passo 4
+Teste executando o arquivo error.py no projeto diretamente pelo explorador de arquivos, dando um duplo-clique
+
+#### Passo 5
 Verifique se a mensagem de erro é pausada assim que aparece
 
 ### Pronto!
